@@ -1,3 +1,10 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Wed Nov 15 11:17:35 2017
+
+@author: Administrator
+"""
+
 #%%
 import pandas as pd
 import numpy as np
@@ -116,16 +123,17 @@ def mlrsl(train_data, params, m = 0, max_iter = 100, tol = 1e-4):
     return G, F, theta, ii 
 
 #%% 
-chem_mat = pd.read_csv(r"drug_fp_mat.txt", sep = "\t", header = 0, index_col = 0)
+chem_mat = pd.read_csv(r"./drug_fp_mat.txt", sep = "\t", header = 0, index_col = 0)
 dom_mat = pd.read_csv("./drug_domain_mat.txt", sep = "\t", header = 0, index_col = 0)
 go_mat = pd.read_csv("./drug_gobp_mat.txt", sep = "\t", header = 0, index_col = 0)
-expr_mat = pd.read_csv("./drug_lincs_gene_mat.txt", sep = "\t", header = 0, index_col = 0)
+expr_mat = pd.read_csv("./drug_gene_expr_mat.txt", sep = "\t", header = 0, index_col = 0)
 side_mat = pd.read_csv("./drug_pt_mat.txt", sep = "\t", header = 0, index_col = 0)
 
 chemmat_new = pd.read_csv('./drug_fp_mat_case_study.txt', sep = "\t", header = 0, index_col = 0);
-dommat_new = pd.read_csv('./drug_dom_mat_case_study.txt', sep = "\t", header = 0, index_col = 0);
-gomat_new = pd.read_csv('./drug_go_mat_case_study.txt', sep = "\t", header = 0, index_col = 0);
-exprmat_new = pd.read_csv('./drug_expr_mat_case_study.txt', sep = "\t", header = 0, index_col = 0);
+dommat_new = pd.read_csv('./drug_domain_mat_case_study.txt', sep = "\t", header = 0, index_col = 0);
+gomat_new = pd.read_csv('./drug_gobp_mat_case_study.txt', sep = "\t", header = 0, index_col = 0);
+exprmat_new = pd.read_csv('./drug_gene_expr_mat_case_study.txt', sep = "\t", header = 0, index_col = 0);
+
 
 #%%
 X1 = chem_mat.to_numpy()
