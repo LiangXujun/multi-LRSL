@@ -94,7 +94,7 @@ def mlrsl(train_data, params, m = 0, max_iter = 100, tol = 1e-4):
             Zk = Gpk - 1/Lf*dfGpk
             G[i] = soft_threshold(Zk, beta/Lf)
         
-        t1, t2 = t2, (1 + sqrt(4*t2**2 + 1))/2
+        t1, t2 = t2, (1 + sqrt(4*t1**2 + 1))/2
         
         for i in range(m):
             theta[i] = (1/trace(F.T@Ls[i]@F))**(1/(gam - 1))
