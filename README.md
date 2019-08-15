@@ -1,7 +1,7 @@
 # multi-LRSL
 This folder constains the code and data for the paper 'Learning important features from multi-view data to predict drug side effects'.
 
-'mlrsl_all_feature.py' is the python code for the proposed algorithm. The code was tested under the environment of python 3.7.3 + numpy 1.16.3 + pandas 0.24.2 + scipy 1.2.1. 
+'mlrsl_all_feature.py' is the python code for the proposed algorithm. The code was tested under the environment of python 3.7.3 + numpy 1.16.3 + pandas 0.24.2 + scipy 1.2.1 + scikit-learn 0.20.0. 
 
 
 501 drugs with chemical structures, target domains, target gene ontology terms(biological process terms only), gene expression profiles and known side effects were used as golden stardard dataset. All drugs are indicated by their DrugBank IDs. 
