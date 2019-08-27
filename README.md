@@ -17,4 +17,4 @@ The description of the GO BP terms could be found at http://geneontology.org/
 
 'drug_pt_mat' contains the side effects of the drugs. The rows are drugs and the columns are side effect cuis. The raw data were obtained from http://sideeffects.embl.de/download/
 
-The other four text files 'drug_fp_mat_case_study.txt', 'drug_domain_mat_case_study.txt', 'drug_gobp_mat_case_study.txt', 'drug_gene_expr_mat_case_study.txt' contain feature matrices of 320 drugs without side effect records in Sider database. These drugs were used in the case study of the paper.
+The other four text files 'drug_fp_mat_case_study.txt', 'drug_domain_mat_case_study.txt', 'drug_gobp_mat_case_study.txt', 'drug_gene_expr_mat_case_study.txt' contain feature matrices of 320 drugs without side effect records in SIDER database. These drugs were used in the case study of the paper.
